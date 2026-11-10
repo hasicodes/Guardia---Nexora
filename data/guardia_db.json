@@ -1,0 +1,1637 @@
+{
+  "users": [
+    {
+      "id": "USR-ADMIN-1",
+      "name": "Aditya Vardhan",
+      "email": "admin@guardia.gov.in",
+      "role": "admin",
+      "badgeNumber": "GUA-DIR-001"
+    },
+    {
+      "id": "USR-POLICE-1",
+      "name": "Inspector R. Selvakumar",
+      "email": "police@guardia.gov.in",
+      "role": "department",
+      "department": "police",
+      "badgeNumber": "TN-POL-4412"
+    },
+    {
+      "id": "USR-FIRE-1",
+      "name": "Chief Officer M. Banerjee",
+      "email": "fire@guardia.gov.in",
+      "role": "department",
+      "department": "fire",
+      "badgeNumber": "FRS-HQ-902"
+    },
+    {
+      "id": "USR-AMB-1",
+      "name": "Dr. Priya Nambiar (EMS 108)",
+      "email": "medical@guardia.gov.in",
+      "role": "department",
+      "department": "ambulance",
+      "badgeNumber": "EMS-DOC-108"
+    },
+    {
+      "id": "USR-CITIZEN-1",
+      "name": "Kavitha Ramesh",
+      "email": "citizen@example.com",
+      "role": "citizen"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-DEMO-01",
+      "incidentReference": "GUA-TN-2026-8821",
+      "title": "[SIMULATED] Multi-Story Chemical Warehouse Blaze with Trapped Staff",
+      "description": "Major fire broke out in the storage section of a chemical distribution warehouse. Thick toxic smoke billowing across Poonamallee High Road. Three workers reported trapped on the 2nd floor mezzanine; immediate breathing difficulty and life danger.",
+      "category": "fire",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "locality": "Poonamallee High Road, Kilpauk",
+      "peopleAffected": 28,
+      "peopleInjured": 4,
+      "injurySeverity": "life_threatening",
+      "peopleTrapped": true,
+      "immediateDanger": true,
+      "medicalConditionNotes": "Severe smoke inhalation, 2nd degree thermal burns, 3 trapped individuals conscious but choking.",
+      "hasVulnerablePeople": false,
+      "isSituationEscalating": true,
+      "severity": "critical",
+      "verificationStatus": "verified",
+      "incidentStatus": "in_progress",
+      "submittedAt": "2026-11-10T05:35:10.904Z",
+      "updatedAt": "2026-11-10T06:11:10.904Z",
+      "submittedBy": {
+        "name": "S. Ramanathan (Warehouse Supervisor)",
+        "phone": "+91 98401 XXXXX",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 87,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life",
+          "Critical life-threatening trauma reported",
+          "Individuals reported trapped under debris/flood/structure",
+          "Situation actively expanding or escalating in scale"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "LIFE THREATENING"
+          },
+          "medicalCondition": {
+            "score": 65,
+            "weight": 15,
+            "contribution": 10,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 100,
+            "weight": 12,
+            "contribution": 12,
+            "label": "Trapped Under Threat"
+          },
+          "peopleAffected": {
+            "score": 80,
+            "weight": 10,
+            "contribution": 8,
+            "label": "28 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Standard"
+          },
+          "incidentProgression": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Actively Escalating"
+          },
+          "waitingTime": {
+            "score": 70,
+            "weight": 3,
+            "contribution": 2,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-FIRE-56512",
+          "incidentId": "INC-DEMO-01",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "response_initiated",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true,
+          "acknowledgedAt": "2026-11-10T05:41:10.904Z",
+          "acknowledgedBy": "Chief Officer M. Banerjee",
+          "responseInitiatedAt": "2026-11-10T05:48:10.904Z",
+          "responseNotes": "Units on scene; hydraulic ventilation and extrication team deployed on mezzanine."
+        },
+        {
+          "id": "NOTIF-AMBULANCE-99955",
+          "incidentId": "INC-DEMO-01",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "response_initiated",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true,
+          "acknowledgedAt": "2026-11-10T05:41:10.904Z",
+          "acknowledgedBy": "Inspector R. Selvakumar",
+          "responseInitiatedAt": "2026-11-10T05:48:10.904Z",
+          "responseNotes": "Units on scene; hydraulic ventilation and extrication team deployed on mezzanine."
+        },
+        {
+          "id": "NOTIF-POLICE-10458",
+          "incidentId": "INC-DEMO-01",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "response_initiated",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true,
+          "acknowledgedAt": "2026-11-10T05:41:10.904Z",
+          "acknowledgedBy": "Inspector R. Selvakumar",
+          "responseInitiatedAt": "2026-11-10T05:48:10.904Z",
+          "responseNotes": "Units on scene; hydraulic ventilation and extrication team deployed on mezzanine."
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-3194",
+          "timestamp": "2026-11-10T05:35:10.904Z",
+          "actor": "S. Ramanathan (Warehouse Supervisor)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-7934",
+          "timestamp": "2026-11-10T05:35:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 87/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Critical life-threatening trauma reported, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+        },
+        {
+          "id": "AUD-7957",
+          "timestamp": "2026-11-10T05:39:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": [
+        "RES-FIRE-01",
+        "RES-AMB-01",
+        "RES-POL-01"
+      ]
+    },
+    {
+      "id": "INC-DEMO-02",
+      "incidentReference": "GUA-MH-2026-4190",
+      "title": "[SIMULATED] Multi-Vehicle Highway Collision on Mumbai-Pune Expressway",
+      "description": "Severe multi-vehicle pileup involving an intercity sleeper bus, two SUVs, and a cargo tanker near Khandala Ghat. Multiple passengers trapped in twisted vehicle frames. Fuel spill detected on carriageway.",
+      "category": "road_accident",
+      "latitude": 18.75,
+      "longitude": 73.37,
+      "state": "Maharashtra",
+      "district": "Pune",
+      "locality": "Mumbai-Pune Expressway, Khandala Tunnel exit",
+      "peopleAffected": 42,
+      "peopleInjured": 11,
+      "injurySeverity": "serious",
+      "peopleTrapped": true,
+      "immediateDanger": true,
+      "medicalConditionNotes": "Compound fractures, severe head trauma, two passengers pinned beneath dashboard.",
+      "hasVulnerablePeople": true,
+      "isSituationEscalating": true,
+      "severity": "critical",
+      "verificationStatus": "verified",
+      "incidentStatus": "in_progress",
+      "submittedAt": "2026-11-10T05:08:10.904Z",
+      "updatedAt": "2026-11-10T05:58:10.904Z",
+      "submittedBy": {
+        "name": "Highway Patrol Officer Deshmukh",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 87,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life",
+          "Individuals reported trapped under debris/flood/structure",
+          "Situation actively expanding or escalating in scale"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 75,
+            "weight": 25,
+            "contribution": 19,
+            "label": "SERIOUS"
+          },
+          "medicalCondition": {
+            "score": 65,
+            "weight": 15,
+            "contribution": 10,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 100,
+            "weight": 12,
+            "contribution": 12,
+            "label": "Trapped Under Threat"
+          },
+          "peopleAffected": {
+            "score": 80,
+            "weight": 10,
+            "contribution": 8,
+            "label": "42 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Children/Elderly Present"
+          },
+          "incidentProgression": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Actively Escalating"
+          },
+          "waitingTime": {
+            "score": 100,
+            "weight": 3,
+            "contribution": 3,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-POLICE-79671",
+          "incidentId": "INC-DEMO-02",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-AMBULANCE-98366",
+          "incidentId": "INC-DEMO-02",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-FIRE-37962",
+          "incidentId": "INC-DEMO-02",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-7239",
+          "timestamp": "2026-11-10T05:08:10.904Z",
+          "actor": "Highway Patrol Officer Deshmukh",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-9278",
+          "timestamp": "2026-11-10T05:08:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 87/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+        },
+        {
+          "id": "AUD-4746",
+          "timestamp": "2026-11-10T05:12:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-03",
+      "incidentReference": "GUA-DL-2026-1049",
+      "title": "[SIMULATED] Mass Heatstroke & Acute Dehydration at Stadium Gathering",
+      "description": "Sudden collapse of spectators during high-temperature outdoor youth athletics meet in central sports complex. Medical room overwhelmed; multiple casualties unconscious with heat exhaustion.",
+      "category": "medical",
+      "latitude": 28.5912,
+      "longitude": 77.2285,
+      "state": "Delhi",
+      "district": "New Delhi",
+      "locality": "Jawaharlal Nehru Stadium Complex",
+      "peopleAffected": 65,
+      "peopleInjured": 14,
+      "injurySeverity": "serious",
+      "peopleTrapped": false,
+      "immediateDanger": true,
+      "medicalConditionNotes": "High fever, acute dehydration, delirium, unresponsiveness in 3 elderly spectators.",
+      "hasVulnerablePeople": true,
+      "isSituationEscalating": false,
+      "severity": "high",
+      "verificationStatus": "verified",
+      "incidentStatus": "in_progress",
+      "submittedAt": "2026-11-10T05:48:10.904Z",
+      "updatedAt": "2026-11-10T06:13:10.904Z",
+      "submittedBy": {
+        "name": "Dr. Vivek Mehra (Event Medical Lead)",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 67,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 75,
+            "weight": 25,
+            "contribution": 19,
+            "label": "SERIOUS"
+          },
+          "medicalCondition": {
+            "score": 35,
+            "weight": 15,
+            "contribution": 5,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 5,
+            "weight": 12,
+            "contribution": 1,
+            "label": "Not Trapped"
+          },
+          "peopleAffected": {
+            "score": 100,
+            "weight": 10,
+            "contribution": 10,
+            "label": "65 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Children/Elderly Present"
+          },
+          "incidentProgression": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Stable"
+          },
+          "waitingTime": {
+            "score": 70,
+            "weight": 3,
+            "contribution": 2,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-AMBULANCE-94827",
+          "incidentId": "INC-DEMO-03",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-POLICE-27291",
+          "incidentId": "INC-DEMO-03",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-9258",
+          "timestamp": "2026-11-10T05:48:10.904Z",
+          "actor": "Dr. Vivek Mehra (Event Medical Lead)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-5580",
+          "timestamp": "2026-11-10T05:48:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 67/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life)"
+        },
+        {
+          "id": "AUD-5826",
+          "timestamp": "2026-11-10T05:52:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-04",
+      "incidentReference": "GUA-KA-2026-6632",
+      "title": "[SIMULATED] Urban Flash Inundation & Submerged Residential Basement",
+      "description": "Torrential pre-monsoon cloudburst flooded Bellandur low-lying residential layouts. Ground-floor parking completely submerged; elderly residents stranded on upper balcony with water level rising.",
+      "category": "flood",
+      "latitude": 12.9352,
+      "longitude": 77.6245,
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "locality": "Bellandur Lake Enclave, Outer Ring Road",
+      "peopleAffected": 34,
+      "peopleInjured": 1,
+      "injurySeverity": "minor",
+      "peopleTrapped": true,
+      "immediateDanger": true,
+      "medicalConditionNotes": "Hypothermia risk for elderly residents; minor cuts from floating debris.",
+      "hasVulnerablePeople": true,
+      "isSituationEscalating": true,
+      "severity": "high",
+      "verificationStatus": "verified",
+      "incidentStatus": "in_progress",
+      "submittedAt": "2026-11-10T04:33:10.904Z",
+      "updatedAt": "2026-11-10T05:43:10.904Z",
+      "submittedBy": {
+        "name": "Ananya Rao (RWA Secretary)",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 71,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life",
+          "Individuals reported trapped under debris/flood/structure",
+          "Situation actively expanding or escalating in scale"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 30,
+            "weight": 25,
+            "contribution": 8,
+            "label": "MINOR"
+          },
+          "medicalCondition": {
+            "score": 35,
+            "weight": 15,
+            "contribution": 5,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 100,
+            "weight": 12,
+            "contribution": 12,
+            "label": "Trapped Under Threat"
+          },
+          "peopleAffected": {
+            "score": 80,
+            "weight": 10,
+            "contribution": 8,
+            "label": "34 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Children/Elderly Present"
+          },
+          "incidentProgression": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Actively Escalating"
+          },
+          "waitingTime": {
+            "score": 100,
+            "weight": 3,
+            "contribution": 3,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-FIRE-72768",
+          "incidentId": "INC-DEMO-04",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-POLICE-56424",
+          "incidentId": "INC-DEMO-04",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-AMBULANCE-24234",
+          "incidentId": "INC-DEMO-04",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-8105",
+          "timestamp": "2026-11-10T04:33:10.904Z",
+          "actor": "Ananya Rao (RWA Secretary)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-2529",
+          "timestamp": "2026-11-10T04:33:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 71/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+        },
+        {
+          "id": "AUD-6456",
+          "timestamp": "2026-11-10T04:37:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-05",
+      "incidentReference": "GUA-WB-2026-3021",
+      "title": "[SIMULATED] Structural Cantilever Collapse at Heritage Renovation Site",
+      "description": "Partial structural collapse of century-old facade during retrofit works near Bowbazar. Masonry fell across pedestrian footpath. Two laborers trapped under timber and brick rubble.",
+      "category": "building_collapse",
+      "latitude": 22.5726,
+      "longitude": 88.3639,
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "locality": "Bowbazar / Central Avenue Corridor",
+      "peopleAffected": 12,
+      "peopleInjured": 3,
+      "injurySeverity": "life_threatening",
+      "peopleTrapped": true,
+      "immediateDanger": true,
+      "medicalConditionNotes": "Crush injuries to extremities, suspected pelvic trauma.",
+      "hasVulnerablePeople": false,
+      "isSituationEscalating": false,
+      "severity": "critical",
+      "verificationStatus": "verified",
+      "incidentStatus": "reported",
+      "submittedAt": "2026-11-10T06:01:10.904Z",
+      "updatedAt": "2026-11-10T06:01:10.904Z",
+      "submittedBy": {
+        "name": "B. Sen (Local Shopkeeper)",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 74,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life",
+          "Critical life-threatening trauma reported",
+          "Individuals reported trapped under debris/flood/structure"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "LIFE THREATENING"
+          },
+          "medicalCondition": {
+            "score": 35,
+            "weight": 15,
+            "contribution": 5,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 100,
+            "weight": 12,
+            "contribution": 12,
+            "label": "Trapped Under Threat"
+          },
+          "peopleAffected": {
+            "score": 50,
+            "weight": 10,
+            "contribution": 5,
+            "label": "12 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Standard"
+          },
+          "incidentProgression": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Stable"
+          },
+          "waitingTime": {
+            "score": 40,
+            "weight": 3,
+            "contribution": 1,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-FIRE-51363",
+          "incidentId": "INC-DEMO-05",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-AMBULANCE-12098",
+          "incidentId": "INC-DEMO-05",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-POLICE-83382",
+          "incidentId": "INC-DEMO-05",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-6058",
+          "timestamp": "2026-11-10T06:01:10.904Z",
+          "actor": "B. Sen (Local Shopkeeper)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-8272",
+          "timestamp": "2026-11-10T06:01:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 74/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Critical life-threatening trauma reported, Individuals reported trapped under debris/flood/structure)"
+        },
+        {
+          "id": "AUD-9884",
+          "timestamp": "2026-11-10T06:05:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-06",
+      "incidentReference": "GUA-KL-2026-7788",
+      "title": "[SIMULATED] Coastal Storm Surge Impacting Fishing Hamlet",
+      "description": "High tidal surge breached seawall at Vypin coastline. Seven country boats capsized near harbour mouth; 12 fishermen rescued by coastal villagers; two currently undergoing basic resuscitation.",
+      "category": "flood",
+      "latitude": 9.995,
+      "longitude": 76.24,
+      "state": "Kerala",
+      "district": "Ernakulam",
+      "locality": "Vypin Coastal Junction, Kochi",
+      "peopleAffected": 45,
+      "peopleInjured": 5,
+      "injurySeverity": "serious",
+      "peopleTrapped": false,
+      "immediateDanger": true,
+      "medicalConditionNotes": "Near-drowning resuscitation, aspiration pneumonia risk, lacerations.",
+      "hasVulnerablePeople": true,
+      "isSituationEscalating": false,
+      "severity": "high",
+      "verificationStatus": "verified",
+      "incidentStatus": "in_progress",
+      "submittedAt": "2026-11-10T03:53:10.904Z",
+      "updatedAt": "2026-11-10T05:23:10.904Z",
+      "submittedBy": {
+        "name": "Mathew George (Coastal Welfare Officer)",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 66,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 75,
+            "weight": 25,
+            "contribution": 19,
+            "label": "SERIOUS"
+          },
+          "medicalCondition": {
+            "score": 35,
+            "weight": 15,
+            "contribution": 5,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 5,
+            "weight": 12,
+            "contribution": 1,
+            "label": "Not Trapped"
+          },
+          "peopleAffected": {
+            "score": 80,
+            "weight": 10,
+            "contribution": 8,
+            "label": "45 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Children/Elderly Present"
+          },
+          "incidentProgression": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Stable"
+          },
+          "waitingTime": {
+            "score": 100,
+            "weight": 3,
+            "contribution": 3,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-FIRE-75103",
+          "incidentId": "INC-DEMO-06",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-POLICE-87358",
+          "incidentId": "INC-DEMO-06",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-AMBULANCE-10786",
+          "incidentId": "INC-DEMO-06",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-8408",
+          "timestamp": "2026-11-10T03:53:10.904Z",
+          "actor": "Mathew George (Coastal Welfare Officer)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-5434",
+          "timestamp": "2026-11-10T03:53:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 66/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life)"
+        },
+        {
+          "id": "AUD-4942",
+          "timestamp": "2026-11-10T03:57:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-07",
+      "incidentReference": "GUA-OD-2026-9214",
+      "title": "[SIMULATED] Industrial Boiler Steam Leak at Power Plant Ancillary",
+      "description": "High-pressure steam leak at power sub-station distribution manifold. High decibel blast heard; localized structural damage. Perimeter evacuated as safety precaution.",
+      "category": "other",
+      "latitude": 20.2961,
+      "longitude": 85.8245,
+      "state": "Odisha",
+      "district": "Khordha",
+      "locality": "Mancheswar Industrial Estate, Bhubaneswar",
+      "peopleAffected": 15,
+      "peopleInjured": 0,
+      "injurySeverity": "none",
+      "peopleTrapped": false,
+      "immediateDanger": false,
+      "medicalConditionNotes": "No burns reported; perimeter cleared.",
+      "hasVulnerablePeople": false,
+      "isSituationEscalating": false,
+      "severity": "medium",
+      "verificationStatus": "verified",
+      "incidentStatus": "resolved",
+      "submittedAt": "2026-11-10T01:03:10.904Z",
+      "updatedAt": "2026-11-10T03:23:10.904Z",
+      "submittedBy": {
+        "name": "Plant Safety Officer Tripathy",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P4",
+      "finalPriority": "P4",
+      "assessment": {
+        "score": 24,
+        "suggestedPriority": "P4",
+        "urgentReviewOverride": false,
+        "urgentReasons": [],
+        "factors": {
+          "threatToLife": {
+            "score": 15,
+            "weight": 25,
+            "contribution": 4,
+            "label": "Normal / Low"
+          },
+          "injurySeverity": {
+            "score": 5,
+            "weight": 25,
+            "contribution": 1,
+            "label": "NONE"
+          },
+          "medicalCondition": {
+            "score": 65,
+            "weight": 15,
+            "contribution": 10,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 5,
+            "weight": 12,
+            "contribution": 1,
+            "label": "Not Trapped"
+          },
+          "peopleAffected": {
+            "score": 50,
+            "weight": 10,
+            "contribution": 5,
+            "label": "15 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Standard"
+          },
+          "incidentProgression": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Stable"
+          },
+          "waitingTime": {
+            "score": 100,
+            "weight": 3,
+            "contribution": 3,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-POLICE-25031",
+          "incidentId": "INC-DEMO-07",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "completed",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true,
+          "acknowledgedAt": "2026-11-10T01:23:10.904Z",
+          "completedAt": "2026-11-10T03:13:10.904Z",
+          "responseNotes": "Valve sealed and safety inspection confirmed negative for hazardous residue."
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-2295",
+          "timestamp": "2026-11-10T01:03:10.904Z",
+          "actor": "Plant Safety Officer Tripathy",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-7103",
+          "timestamp": "2026-11-10T01:03:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 24/100. Suggested Priority: P4. "
+        },
+        {
+          "id": "AUD-6635",
+          "timestamp": "2026-11-10T01:07:10.904Z",
+          "actor": "Aditya Vardhan",
+          "actorRole": "Administrator",
+          "action": "Report Verified",
+          "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+        }
+      ],
+      "assignedResourceIds": []
+    },
+    {
+      "id": "INC-DEMO-08",
+      "incidentReference": "GUA-TN-2026-8829",
+      "title": "[SIMULATED] Warehouse on Fire with Toxic Fumes Near Poonamallee",
+      "description": "Huge black smoke and flames coming from chemical warehouse near Kilpauk hospital signal. Several people shouting that workers are still inside. Traffic halted completely.",
+      "category": "fire",
+      "latitude": 13.0833,
+      "longitude": 80.2715,
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "locality": "Kilpauk Junction, Near Poonamallee High Rd",
+      "peopleAffected": 20,
+      "peopleInjured": 2,
+      "injurySeverity": "unknown",
+      "peopleTrapped": true,
+      "immediateDanger": true,
+      "medicalConditionNotes": "People choking from fumes",
+      "hasVulnerablePeople": false,
+      "isSituationEscalating": true,
+      "severity": "critical",
+      "verificationStatus": "unverified",
+      "incidentStatus": "reported",
+      "submittedAt": "2026-11-10T05:45:10.904Z",
+      "updatedAt": "2026-11-10T05:45:10.904Z",
+      "submittedBy": {
+        "name": "M. Karthik (Motorist)",
+        "isAnonymous": false
+      },
+      "isDemo": true,
+      "suggestedPriority": "P1",
+      "finalPriority": "P1",
+      "assessment": {
+        "score": 69,
+        "suggestedPriority": "P1",
+        "urgentReviewOverride": true,
+        "urgentReasons": [
+          "Report indicates immediate danger to human life",
+          "Individuals reported trapped under debris/flood/structure",
+          "Situation actively expanding or escalating in scale"
+        ],
+        "factors": {
+          "threatToLife": {
+            "score": 100,
+            "weight": 25,
+            "contribution": 25,
+            "label": "Immediate Danger Reported"
+          },
+          "injurySeverity": {
+            "score": 45,
+            "weight": 25,
+            "contribution": 11,
+            "label": "UNKNOWN"
+          },
+          "medicalCondition": {
+            "score": 35,
+            "weight": 15,
+            "contribution": 5,
+            "label": "Standard / Minor"
+          },
+          "peopleTrapped": {
+            "score": 100,
+            "weight": 12,
+            "contribution": 12,
+            "label": "Trapped Under Threat"
+          },
+          "peopleAffected": {
+            "score": 80,
+            "weight": 10,
+            "contribution": 8,
+            "label": "20 People Involved"
+          },
+          "vulnerableIndividuals": {
+            "score": 10,
+            "weight": 5,
+            "contribution": 1,
+            "label": "Standard"
+          },
+          "incidentProgression": {
+            "score": 100,
+            "weight": 5,
+            "contribution": 5,
+            "label": "Actively Escalating"
+          },
+          "waitingTime": {
+            "score": 70,
+            "weight": 3,
+            "contribution": 2,
+            "label": "Elapsed Triage Window"
+          }
+        },
+        "missingInformation": [
+          "Injury severity is unconfirmed (precautionary baseline applied)"
+        ],
+        "assessedAt": "2026-11-10T06:23:10.904Z"
+      },
+      "notifications": [
+        {
+          "id": "NOTIF-FIRE-48570",
+          "incidentId": "INC-DEMO-08",
+          "department": "fire",
+          "departmentName": "Fire & Rescue Services",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-AMBULANCE-82208",
+          "incidentId": "INC-DEMO-08",
+          "department": "ambulance",
+          "departmentName": "Emergency Medical Services (108/Ambulance)",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        },
+        {
+          "id": "NOTIF-POLICE-56511",
+          "incidentId": "INC-DEMO-08",
+          "department": "police",
+          "departmentName": "State Police Command",
+          "status": "sent",
+          "queuedAt": "2026-11-10T06:23:10.904Z",
+          "sentAt": "2026-11-10T06:23:10.904Z",
+          "deliveredAt": "2026-11-10T06:23:12.404Z",
+          "isSimulated": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "AUD-8879",
+          "timestamp": "2026-11-10T05:45:10.904Z",
+          "actor": "M. Karthik (Motorist)",
+          "actorRole": "Citizen / Reporter",
+          "action": "Incident Submitted",
+          "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+        },
+        {
+          "id": "AUD-7909",
+          "timestamp": "2026-11-10T05:45:10.904Z",
+          "actor": "GUARDIA LIFE-FIRST Engine",
+          "actorRole": "Automated Prioritisation System",
+          "action": "LIFE-FIRST Assessment Generated",
+          "notes": "Assessed Score: 69/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+        }
+      ],
+      "assignedResourceIds": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "RES-AMB-01",
+      "name": "ALS Advanced Life Support 108 - #12",
+      "type": "ambulance",
+      "department": "ambulance",
+      "location": "Central Station, Chennai",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "status": "assigned",
+      "assignedIncidentId": "INC-DEMO-01",
+      "assignedAt": "2026-11-10T05:48:10.904Z",
+      "crewCount": 3,
+      "lastUpdated": "2026-11-10T06:13:10.904Z"
+    },
+    {
+      "id": "RES-AMB-02",
+      "name": "ALS Trauma Care Unit #04",
+      "type": "ambulance",
+      "department": "ambulance",
+      "location": "South Zone Depot, Bengaluru",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "status": "available",
+      "crewCount": 3,
+      "lastUpdated": "2026-11-10T05:23:10.904Z"
+    },
+    {
+      "id": "RES-AMB-03",
+      "name": "Mobile ICU Express #07",
+      "type": "ambulance",
+      "department": "ambulance",
+      "location": "Connaught Circle Base, New Delhi",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "status": "available",
+      "crewCount": 4,
+      "lastUpdated": "2026-11-10T05:58:10.904Z"
+    },
+    {
+      "id": "RES-FIRE-01",
+      "name": "High-Reach Water Tender WT-4",
+      "type": "fire_unit",
+      "department": "fire",
+      "location": "Anna Nagar Station, Chennai",
+      "latitude": 13.085,
+      "longitude": 80.21,
+      "status": "assigned",
+      "assignedIncidentId": "INC-DEMO-01",
+      "assignedAt": "2026-11-10T05:43:10.904Z",
+      "crewCount": 6,
+      "lastUpdated": "2026-11-10T06:08:10.904Z"
+    },
+    {
+      "id": "RES-FIRE-02",
+      "name": "Industrial Foam Tender FT-09",
+      "type": "fire_unit",
+      "department": "fire",
+      "location": "Andheri Industrial Base, Mumbai",
+      "latitude": 19.1136,
+      "longitude": 72.8697,
+      "status": "available",
+      "crewCount": 5,
+      "lastUpdated": "2026-11-10T05:33:10.904Z"
+    },
+    {
+      "id": "RES-POL-01",
+      "name": "PCR Interceptor Alpha-14",
+      "type": "police_pcr",
+      "department": "police",
+      "location": "Poonamallee High Rd, Chennai",
+      "latitude": 13.08,
+      "longitude": 80.25,
+      "status": "assigned",
+      "assignedIncidentId": "INC-DEMO-01",
+      "crewCount": 2,
+      "lastUpdated": "2026-11-10T06:03:10.904Z"
+    },
+    {
+      "id": "RES-POL-02",
+      "name": "Rapid Response Cruiser PCR-88",
+      "type": "police_pcr",
+      "department": "police",
+      "location": "Outer Ring Rd, Bengaluru",
+      "latitude": 12.9352,
+      "longitude": 77.6245,
+      "status": "available",
+      "crewCount": 2,
+      "lastUpdated": "2026-11-10T05:38:10.904Z"
+    },
+    {
+      "id": "RES-BOAT-01",
+      "name": "Inflatable Rescue Boat Unit RB-3",
+      "type": "rescue_boat",
+      "department": "fire",
+      "location": "Adyar River Depot, Chennai",
+      "latitude": 13.0012,
+      "longitude": 80.2565,
+      "status": "available",
+      "crewCount": 4,
+      "lastUpdated": "2026-11-10T05:53:10.904Z"
+    },
+    {
+      "id": "RES-HEAVY-01",
+      "name": "Hydraulic Extrication Crane HC-02",
+      "type": "heavy_rescue",
+      "department": "fire",
+      "location": "Bandra Reclamation, Mumbai",
+      "latitude": 19.0544,
+      "longitude": 72.8402,
+      "status": "available",
+      "crewCount": 4,
+      "lastUpdated": "2026-11-10T04:53:10.904Z"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "CLS-TA-5172",
+      "name": "Chennai Regional Emergency Cluster (FIRE)",
+      "centerLatitude": 13.083,
+      "centerLongitude": 80.2711,
+      "radiusKm": 18,
+      "incidentIds": [
+        "INC-DEMO-01",
+        "INC-DEMO-08"
+      ],
+      "categories": [
+        "fire"
+      ],
+      "totalAffected": 48,
+      "totalInjured": 6,
+      "primaryPriority": "P1",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "status": "suggested",
+      "detectedAt": "2026-11-10T06:23:10.904Z"
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "DUP-7270",
+      "primaryIncidentId": "INC-DEMO-01",
+      "duplicateIncidentId": "INC-DEMO-08",
+      "confidenceScore": 98,
+      "matchingFactors": [
+        "Immediate geographic co-location (< 109m)",
+        "Matching emergency category (fire)",
+        "Reported within 10 mins",
+        "Moderate keyword overlap"
+      ],
+      "status": "pending",
+      "detectedAt": "2026-11-10T06:23:10.905Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOTIF-01",
+      "type": "critical_priority",
+      "title": "P1 Life-Threatening Incident Alert",
+      "message": "Multi-Story Chemical Warehouse Blaze (INC-DEMO-01) assessed P1 with trapped staff on Poonamallee High Rd.",
+      "incidentId": "INC-DEMO-01",
+      "timestamp": "2026-11-10T05:38:10.904Z",
+      "read": false,
+      "severity": "critical"
+    },
+    {
+      "id": "NOTIF-02",
+      "type": "duplicate_detected",
+      "title": "Potential Duplicate Incident Flagged",
+      "message": "Report GUA-TN-2026-8829 has 85% geographical & semantic overlap with GUA-TN-2026-8821.",
+      "incidentId": "INC-DEMO-08",
+      "timestamp": "2026-11-10T05:48:10.904Z",
+      "read": false,
+      "severity": "medium"
+    },
+    {
+      "id": "NOTIF-03",
+      "type": "department_ack",
+      "title": "Fire & Rescue Units Responding",
+      "message": "Fire & Rescue Station Anna Nagar acknowledged and deployed 2 water tenders to Kilpauk.",
+      "incidentId": "INC-DEMO-01",
+      "timestamp": "2026-11-10T05:45:10.904Z",
+      "read": true,
+      "severity": "high"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-3194",
+      "timestamp": "2026-11-10T05:35:10.904Z",
+      "actor": "S. Ramanathan (Warehouse Supervisor)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-7934",
+      "timestamp": "2026-11-10T05:35:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 87/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Critical life-threatening trauma reported, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+    },
+    {
+      "id": "AUD-7957",
+      "timestamp": "2026-11-10T05:39:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-7239",
+      "timestamp": "2026-11-10T05:08:10.904Z",
+      "actor": "Highway Patrol Officer Deshmukh",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-9278",
+      "timestamp": "2026-11-10T05:08:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 87/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+    },
+    {
+      "id": "AUD-4746",
+      "timestamp": "2026-11-10T05:12:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-9258",
+      "timestamp": "2026-11-10T05:48:10.904Z",
+      "actor": "Dr. Vivek Mehra (Event Medical Lead)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-5580",
+      "timestamp": "2026-11-10T05:48:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 67/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life)"
+    },
+    {
+      "id": "AUD-5826",
+      "timestamp": "2026-11-10T05:52:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-8105",
+      "timestamp": "2026-11-10T04:33:10.904Z",
+      "actor": "Ananya Rao (RWA Secretary)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-2529",
+      "timestamp": "2026-11-10T04:33:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 71/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+    },
+    {
+      "id": "AUD-6456",
+      "timestamp": "2026-11-10T04:37:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-6058",
+      "timestamp": "2026-11-10T06:01:10.904Z",
+      "actor": "B. Sen (Local Shopkeeper)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-8272",
+      "timestamp": "2026-11-10T06:01:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 74/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Critical life-threatening trauma reported, Individuals reported trapped under debris/flood/structure)"
+    },
+    {
+      "id": "AUD-9884",
+      "timestamp": "2026-11-10T06:05:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-8408",
+      "timestamp": "2026-11-10T03:53:10.904Z",
+      "actor": "Mathew George (Coastal Welfare Officer)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-5434",
+      "timestamp": "2026-11-10T03:53:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 66/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life)"
+    },
+    {
+      "id": "AUD-4942",
+      "timestamp": "2026-11-10T03:57:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-2295",
+      "timestamp": "2026-11-10T01:03:10.904Z",
+      "actor": "Plant Safety Officer Tripathy",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-7103",
+      "timestamp": "2026-11-10T01:03:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 24/100. Suggested Priority: P4. "
+    },
+    {
+      "id": "AUD-6635",
+      "timestamp": "2026-11-10T01:07:10.904Z",
+      "actor": "Aditya Vardhan",
+      "actorRole": "Administrator",
+      "action": "Report Verified",
+      "notes": "Incident authenticity confirmed through verified reporting signals and visual telemetry."
+    },
+    {
+      "id": "AUD-8879",
+      "timestamp": "2026-11-10T05:45:10.904Z",
+      "actor": "M. Karthik (Motorist)",
+      "actorRole": "Citizen / Reporter",
+      "action": "Incident Submitted",
+      "notes": "Initial emergency report submitted via GUARDIA Citizen Reporting Portal."
+    },
+    {
+      "id": "AUD-7909",
+      "timestamp": "2026-11-10T05:45:10.904Z",
+      "actor": "GUARDIA LIFE-FIRST Engine",
+      "actorRole": "Automated Prioritisation System",
+      "action": "LIFE-FIRST Assessment Generated",
+      "notes": "Assessed Score: 69/100. Suggested Priority: P1. Urgent Override Triggered (Report indicates immediate danger to human life, Individuals reported trapped under debris/flood/structure, Situation actively expanding or escalating in scale)"
+    }
+  ]
+}

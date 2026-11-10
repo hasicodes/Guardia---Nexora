@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #071426;
+    --bg-secondary: #10233C;
+    --bg-card: #142B46;
+    --accent-electric: #268BFF;
+    --accent-critical: #E63946;
+    --accent-high: #F28C28;
+    --accent-medium: #E9B949;
+    --accent-low: #2EAD72;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html.light {
+    --bg-primary: #F1F5F9;
+    --bg-secondary: #E2E8F0;
+    --bg-card: #FFFFFF;
+    color: #0F172A;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbars for command center UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(38, 139, 255, 0.5);
+}
+
+/* Leaflet dark theme tweaks */
+.leaflet-container {
+  background: #071426 !important;
+  font-family: inherit !important;
+}
+.leaflet-popup-content-wrapper {
+  background: #142B46 !important;
+  color: #F8FAFC !important;
+  border: 1px solid rgba(38, 139, 255, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6) !important;
+}
+.leaflet-popup-tip {
+  background: #142B46 !important;
+}
+.leaflet-container a {
+  color: #268BFF !important;
+}

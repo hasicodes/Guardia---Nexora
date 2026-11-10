@@ -1,0 +1,1365 @@
+MASTER PROMPT: BUILD RESQORA
+
+Next-Generation Emergency Intelligence, Disaster Management and Response Coordination Platform
+
+1. PROJECT OVERVIEW
+
+Build a complete, modern, full-stack emergency management website named RESQORA.
+
+Tagline: "Every Second Matters. Every Signal Counts."
+
+RESQORA is a centralized emergency reporting, incident intelligence, disaster monitoring and emergency services coordination platform designed for India.
+
+The platform must connect three major stakeholders:
+
+1. Citizens – report emergencies and track their submitted reports.
+2. Administrators – monitor, classify, prioritise and manage emergencies through a central command centre.
+3. Emergency departments – receive relevant incident notifications, acknowledge them and update response progress through authorised integrations or a clearly labelled prototype interface.
+
+The platform must not be a simple emergency reporting form. It must function as an integrated emergency intelligence ecosystem.
+
+Its main objectives are:
+
+- Collect emergency reports from citizens.
+- Classify emergencies into appropriate categories.
+- Evaluate the urgency of each incident.
+- Prioritise incidents based on threats to human life and injuries.
+- Display emergencies across an interactive map of India.
+- Identify potential clusters of related incidents.
+- Detect potentially duplicate reports.
+- Notify relevant emergency departments.
+- Track departmental acknowledgements.
+- Maintain incident histories and response records.
+- Provide administrators with actionable analytics.
+
+IMPORTANT: Build a fully functional application. Do not create a static mockup with decorative buttons. Every visible interactive control must have a working function.
+
+Use simulated data only for demonstration. Clearly distinguish simulated incidents from real reports.
+
+---
+
+2. DESIGN AND BRAND IDENTITY
+
+Create a premium, futuristic, professional emergency command-centre interface.
+
+The design should combine the appearance of:
+
+- A national emergency operations centre.
+- An advanced geospatial intelligence platform.
+- A modern technology and analytics company.
+
+Colour palette
+
+Primary background: Deep navy (#071426).
+
+Secondary background: Navy blue (#10233C).
+
+Card background: #142B46.
+
+Primary accent: Electric blue (#268BFF).
+
+Critical: Red (#E63946).
+
+High: Orange (#F28C28).
+
+Medium: Yellow (#E9B949).
+
+Low: Green (#2EAD72).
+
+Text: White and cool grey.
+
+Visual guidelines
+
+- Premium dark-mode dashboard.
+- Clean typography.
+- Rounded but professional cards.
+- Subtle gradients.
+- Soft shadows.
+- Smooth transitions.
+- Interactive map markers.
+- Clear status badges.
+- Animated counters where appropriate.
+- Attractive loading skeletons.
+- Responsive layouts.
+- Consistent icons.
+- Accessible colour contrast.
+
+Avoid excessive neon effects, clutter, oversized typography and unnecessary animations.
+
+Create a light-mode option as well.
+
+The design must look polished on desktop, tablets and Android mobile devices.
+
+---
+
+3. USER ROLES AND AUTHENTICATION
+
+Create three different user roles.
+
+A. Citizen
+
+Citizens must be able to:
+
+- Access the public homepage.
+- Submit emergency reports.
+- Select emergency categories.
+- Provide location information.
+- Upload photographs.
+- Receive a unique incident reference ID.
+- Track their submitted incidents.
+- View status updates.
+- Receive notifications when incident status changes.
+
+Citizens must not be able to modify administrative priority decisions or access other citizens' private information.
+
+B. Administrator
+
+Create a secure administrator login.
+
+Administrators must be able to:
+
+- Access the command centre.
+- View all incidents.
+- Verify submitted reports.
+- Edit incident details.
+- Delete test or duplicate records with confirmation.
+- Change severity and priority.
+- Manage incident statuses.
+- Review LIFE-FIRST assessments.
+- Monitor the India emergency map.
+- Manage emergency department notifications.
+- Manage available resources.
+- View analytics.
+- Review the audit log.
+- Manage demonstration data.
+
+C. Emergency Department User
+
+Create a separate authorised department portal.
+
+Department types:
+
+- Police.
+- Fire and Rescue.
+- Ambulance / Medical Services.
+
+Department users must be able to:
+
+- Log in through authorised accounts.
+- View notifications addressed to their department.
+- View relevant incident information.
+- Acknowledge receipt.
+- Update their response status.
+- Add response notes.
+- Record the time of acknowledgement.
+- View their assigned incident history.
+
+Departments must only access information permitted by their role.
+
+---
+
+4. HOMEPAGE
+
+Create an impressive landing page.
+
+Navigation bar
+
+Include:
+
+- RESQORA logo.
+- Home.
+- About.
+- How It Works.
+- Live Emergency Map.
+- Report Emergency.
+- Login.
+
+Hero section
+
+Main heading:
+
+"WHEN EVERY SECOND MATTERS, EVERY SIGNAL COUNTS."
+
+Supporting text:
+
+"An intelligent emergency response ecosystem connecting citizens, administrators and emergency services through real-time incident intelligence."
+
+Primary button: REPORT AN EMERGENCY.
+
+Secondary button: EXPLORE LIVE MAP.
+
+Homepage sections
+
+1. Hero section.
+2. Platform statistics.
+3. How RESQORA works.
+4. Emergency categories.
+5. LIFE-FIRST prioritisation introduction.
+6. India emergency map preview.
+7. Emergency department coordination.
+8. Crisis Pulse innovation.
+9. Accessibility and multilingual features.
+10. Footer.
+
+Statistics must come from actual database data, not hardcoded numbers.
+
+---
+
+5. EMERGENCY INCIDENT REPORTING MODULE
+
+This is a mandatory core feature.
+
+Create a comprehensive, user-friendly reporting form.
+
+Form fields
+
+1. Incident title.
+2. Incident description.
+3. Emergency category.
+4. Exact location or approximate location.
+5. State.
+6. District.
+7. City or locality.
+8. Number of people affected.
+9. Number of injured people, if known.
+10. Injury severity.
+11. Are people trapped?
+12. Is there immediate danger to life?
+13. Is the situation ongoing or escalating?
+14. Optional contact details.
+15. Optional photograph or supporting evidence.
+
+Use an interactive location picker.
+
+Allow users to:
+
+- Select a location on the map.
+- Enter a location manually.
+- Use browser geolocation with permission.
+- Correct an automatically selected location.
+
+Emergency category options
+
+1. Fire Emergency.
+2. Road Accident.
+3. Medical Emergency.
+4. Flood.
+5. Building Collapse.
+6. Other Emergency.
+
+Injury information
+
+Provide selectable options:
+
+- No reported injuries.
+- Minor injuries.
+- Serious injuries.
+- Life-threatening condition reported.
+- Unknown.
+
+Do not force users to make a medical diagnosis.
+
+Submission behaviour
+
+When the user submits:
+
+1. Validate required fields.
+2. Validate uploaded files.
+3. Generate a unique incident ID.
+4. Record the submission timestamp.
+5. Save the report in the database.
+6. Run the LIFE-FIRST assessment.
+7. Suggest relevant emergency departments.
+8. Create an incident record.
+9. Display a confirmation page.
+10. Allow the citizen to track the report.
+
+Display a message:
+
+"Your emergency report has been submitted successfully."
+
+Show its unique reference number.
+
+Do not claim that emergency services have been notified unless notification delivery has actually been confirmed.
+
+---
+
+6. EMERGENCY CATEGORY MANAGEMENT
+
+Create six distinct emergency categories.
+
+Each category should have:
+
+- Unique icon.
+- Category name.
+- Description.
+- Relevant emergency departments.
+- Category-specific reporting fields where appropriate.
+- Category-specific incident filters.
+
+Department mapping:
+
+Fire:
+Fire and Rescue; Ambulance when injuries are reported; Police when relevant.
+
+Road Accident:
+Police and Ambulance; Fire and Rescue when rescue assistance is needed.
+
+Medical:
+Ambulance / Medical Services.
+
+Flood:
+Fire and Rescue; Police and Ambulance when appropriate.
+
+Building Collapse:
+Fire and Rescue; Ambulance; Police when relevant.
+
+Other:
+Relevant departments selected based on incident details and administrator review.
+
+Do not automatically notify every department for every incident.
+
+---
+
+7. LIFE-FIRST – HUMAN-CENTRIC PRIORITISATION ENGINE
+
+This is one of the most important innovations of RESQORA.
+
+Develop a dedicated prioritisation engine that assesses incidents based on reported threats to human life, injury severity and urgency.
+
+The platform must not simply prioritise incidents according to report submission time or category.
+
+Eight assessment criteria
+
+1. Immediate threat to human life.
+2. Injury severity.
+3. Medical condition.
+4. People trapped.
+5. Number of people affected.
+6. Vulnerable individuals.
+7. Incident progression.
+8. Waiting time.
+
+Proposed weighting model
+
+Immediate threat to life: 25%.
+
+Injury severity: 25%.
+
+Medical condition: 15%.
+
+People trapped: 12%.
+
+Number of people affected: 10%.
+
+Vulnerable individuals: 5%.
+
+Incident progression: 5%.
+
+Waiting time: 3%.
+
+Total: 100%.
+
+Treat these as configurable prototype weights, not clinically validated emergency standards.
+
+Assessment logic
+
+Each factor must have a defined input scale.
+
+The engine must:
+
+- Convert the inputs into normalised scores.
+- Calculate a weighted assessment score.
+- Apply urgent-review overrides for reported life-threatening indicators.
+- Produce a suggested priority.
+- Display the reasons behind the recommendation.
+- Allow authorised administrators to override the recommendation.
+- Record the original and updated priority.
+- Record who made the change and when.
+
+Priority levels
+
+P1 – LIFE-THREATENING:
+Immediate urgent review for reported severe injuries, unconsciousness, breathing difficulties or people trapped in immediate danger.
+
+P2 – URGENT:
+Significant injuries, multiple people requiring urgent assistance or escalating danger.
+
+P3 – MODERATE:
+Emergency situations requiring attention without reported immediate life-threatening indicators.
+
+P4 – LOWER URGENCY:
+Lower immediate risk, with no reported injuries or immediate danger.
+
+Critical safety logic
+
+Missing information must never be interpreted as zero risk.
+
+If injury severity is unknown, mark it as UNKNOWN.
+
+Do not automatically downgrade an incident because information is incomplete.
+
+A reported life-threatening indicator must trigger an urgent review even if the calculated weighted score is lower.
+
+The algorithm provides decision support only. It must never independently dispatch emergency services or replace qualified emergency professionals.
+
+LIFE-FIRST explanation panel
+
+For each incident, show:
+
+- Suggested priority.
+- Assessment score.
+- Factors contributing to priority.
+- Missing information.
+- Urgent-review flags.
+- Administrator's final priority.
+- Priority change history.
+
+---
+
+8. INDIA NATIONAL EMERGENCY INTELLIGENCE MAP
+
+This must be one of the main features of RESQORA.
+
+Create an interactive geographical map of INDIA.
+
+Do not use a static image of India.
+
+Use actual geographic boundary data for all 28 states and 8 Union Territories.
+
+Map technology
+
+Use:
+
+- Leaflet.
+- OpenStreetMap.
+- India state boundary GeoJSON.
+- District boundary GeoJSON.
+
+Map functions
+
+1. Display all Indian states and Union Territories.
+2. Allow selection of individual states.
+3. Show district boundaries when a state is selected.
+4. Display reported incident locations.
+5. Use different marker colours according to severity.
+6. Allow marker selection.
+7. Open incident details when a marker is selected.
+8. Display incident clusters.
+9. Filter incidents by category.
+10. Filter by LIFE-FIRST priority.
+11. Filter by status.
+12. Filter by date.
+13. Search by state, district or city.
+14. Zoom in and out.
+15. Reset to the national view.
+16. Toggle map layers.
+17. Show a legend.
+18. Display incident counts by state.
+19. Display district-level statistics.
+20. Refresh incident data from the database.
+
+Map interaction
+
+When the administrator clicks a state, display a side panel with:
+
+- State name.
+- Total incidents.
+- Critical incidents.
+- High-priority incidents.
+- Pending incidents.
+- Resolved incidents.
+- Category breakdown.
+- Number of people reported affected.
+- Number of reported injuries.
+
+When a district is selected, show the same information at district level.
+
+When an individual incident marker is selected, show:
+
+- Incident ID.
+- Category.
+- Location.
+- Severity.
+- LIFE-FIRST priority.
+- People affected.
+- Reported injury information.
+- Submission time.
+- Current status.
+- Department notification status.
+
+Map filters
+
+Provide an interactive filter panel.
+
+Users should be able to select multiple emergency categories and priorities simultaneously.
+
+All filters must update the map and incident list together.
+
+Do not use invented real-world incident locations.
+
+---
+
+9. NATIONAL HUMAN IMPACT PRIORITY QUEUE
+
+Create a dedicated dashboard section showing incidents sorted by LIFE-FIRST priority.
+
+Display:
+
+- Incident ID.
+- Location.
+- Category.
+- Injury information.
+- Number of people affected.
+- Priority.
+- Waiting time.
+- Verification status.
+- Department notification status.
+
+Sorting rules:
+
+1. Urgent life-threatening review flags.
+2. P1 priority.
+3. P2 priority.
+4. P3 priority.
+5. P4 priority.
+
+Within each priority group, consider waiting time and administrator review requirements.
+
+Allow administrators to sort and filter manually.
+
+The queue must update whenever a report is created or its priority changes.
+
+---
+
+10. EMERGENCY ADMINISTRATOR DASHBOARD
+
+Create a professional command-centre dashboard.
+
+Summary cards
+
+- Total incidents.
+- Critical incidents.
+- High-priority incidents.
+- Pending verification.
+- In-progress incidents.
+- Resolved incidents.
+- Total people reported affected.
+- Reported injuries.
+
+Dashboard charts
+
+Use Chart.js.
+
+Include:
+
+1. Incidents by emergency category.
+2. Incidents by severity.
+3. LIFE-FIRST priority distribution.
+4. Daily incident trends.
+5. Weekly incident trends.
+6. Monthly incident trends.
+7. State-wise incident distribution.
+8. Incident resolution trends.
+9. Department acknowledgement performance.
+
+Dashboard widgets
+
+- India live emergency map.
+- LIFE-FIRST priority queue.
+- Recent incident reports.
+- Department notification tracker.
+- Crisis Pulse cluster alerts.
+- Resource availability.
+- Latest administrative activity.
+
+All dashboard values must be calculated from database records.
+
+---
+
+11. INCIDENT MANAGEMENT SYSTEM
+
+Create a full incident management interface.
+
+Incident table
+
+Columns:
+
+- Incident ID.
+- Title.
+- Category.
+- State.
+- District.
+- Reported time.
+- Severity.
+- LIFE-FIRST priority.
+- Incident status.
+- Verification status.
+- Assigned departments.
+- Actions.
+
+Functional operations
+
+Administrators must be able to:
+
+- View.
+- Search.
+- Filter.
+- Sort.
+- Edit.
+- Verify.
+- Reject invalid reports with a recorded reason.
+- Link potentially duplicate reports.
+- Change priority.
+- Update status.
+- Delete demonstration records with confirmation.
+- Export reports to CSV.
+
+Incident statuses
+
+- Reported.
+- Pending.
+- Verified.
+- In Progress.
+- Resolved.
+- Closed.
+
+Keep verification status separate from operational status.
+
+Incident detail page
+
+Every incident should have its own page with:
+
+1. Full report information.
+2. Map location.
+3. Uploaded photographs.
+4. LIFE-FIRST assessment.
+5. Current severity.
+6. Current priority.
+7. Department coordination.
+8. Resource assignments.
+9. Activity timeline.
+10. Administrator notes.
+11. Audit history.
+
+---
+
+12. RESCUE BRIDGE – EMERGENCY SERVICES COORDINATION
+
+This is a major innovation.
+
+Create a system connecting RESQORA with relevant emergency departments.
+
+Department categories
+
+- Police.
+- Fire and Rescue.
+- Ambulance / Medical Services.
+
+Notification workflow
+
+When an incident is submitted:
+
+1. Read the incident category.
+2. Evaluate the information.
+3. Identify relevant departments.
+4. Create a notification record for each selected department.
+5. Send notifications using an authorised configured channel.
+6. Record delivery status.
+7. Allow department acknowledgement.
+8. Track response progress.
+9. Notify administrators of failed or pending notifications.
+
+Notification statuses
+
+- Not sent.
+- Queued.
+- Sent.
+- Delivery confirmed.
+- Acknowledged.
+- Response initiated.
+- Completed.
+- Failed.
+
+Do not treat SENT as ACKNOWLEDGED.
+
+Department dashboard
+
+Department users should see:
+
+- New notifications.
+- Incident priority.
+- Incident category.
+- Location.
+- Relevant injury information.
+- Reported people affected.
+- Notification timestamp.
+- Acknowledgement button.
+- Response status controls.
+- Response notes.
+
+Administrator coordination panel
+
+Display all departments associated with an incident.
+
+Show separate acknowledgement and response statuses for each department.
+
+Prototype mode
+
+Create a working simulated emergency-services environment with three demo departments.
+
+Provide a notification simulation button.
+
+Simulated acknowledgements must be visibly labelled SIMULATED.
+
+Actual dispatch must only be implemented through authorised official integrations. Never claim to have contacted police, fire stations or ambulances when only a local simulation was performed.
+
+---
+
+13. CRISIS PULSE – INCIDENT CLUSTER DETECTION
+
+Develop an innovative incident intelligence engine.
+
+Its purpose is to identify potentially related emergency reports.
+
+How it works
+
+1. Receive a new incident.
+2. Compare its geographic coordinates with existing incidents.
+3. Compare incident categories.
+4. Compare timestamps.
+5. Compare report descriptions.
+6. Identify potentially related incidents.
+7. Create a cluster suggestion.
+8. Display the cluster on the India map.
+9. Notify administrators.
+10. Allow administrators to verify or dismiss the cluster.
+
+Cluster information
+
+- Cluster ID.
+- Number of linked reports.
+- Geographic centre.
+- Categories.
+- Time range.
+- Number of people affected.
+- Priority distribution.
+- Verification status.
+
+Do not automatically merge separate incidents.
+
+Do not describe clusters as confirmed disasters without verification.
+
+---
+
+14. DUPLICATE INCIDENT DETECTION
+
+Develop a duplicate-detection feature.
+
+Compare:
+
+- Location proximity.
+- Emergency category.
+- Submission time.
+- Description similarity.
+
+Display potentially duplicate reports together.
+
+Administrator options:
+
+- Mark as related.
+- Link to an existing incident.
+- Confirm duplicate.
+- Dismiss suggestion.
+
+Preserve the original reports and their submission histories.
+
+Do not automatically delete reports.
+
+---
+
+15. HUMAN IMPACT RADAR
+
+Create a dedicated analytics module showing the human impact of emergencies.
+
+Display:
+
+- Total people reported affected.
+- Number of reported injured people.
+- People reported trapped.
+- Reports containing life-threatening indicators.
+- Number of vulnerable individuals reported.
+- Incidents awaiting assistance.
+- Incident acknowledgement time.
+- Response progress.
+
+Provide filters for:
+
+- State.
+- District.
+- Emergency category.
+- Date.
+- Priority.
+- Verification status.
+
+Clearly distinguish verified counts from unverified reports and estimates.
+
+Never claim that the dashboard represents independently confirmed casualty figures.
+
+---
+
+16. DYNAMIC PRIORITY REASSESSMENT
+
+Priority must not remain permanently fixed.
+
+Whenever new relevant information arrives:
+
+1. Re-evaluate the LIFE-FIRST assessment.
+2. Check for new life-threatening indicators.
+3. Recalculate the suggested priority.
+4. Identify whether escalation is needed.
+5. Notify the administrator.
+6. Record the previous and new priorities.
+7. Preserve the assessment history.
+
+Example:
+
+An incident is initially classified P3.
+
+A new report indicates that people are trapped.
+
+RESQORA flags urgent review and recommends reassessment to P1.
+
+The administrator reviews and confirms the updated priority.
+
+This is an important differentiating innovation.
+
+---
+
+17. EMERGENCY RESOURCE MANAGEMENT
+
+Create a resource management section.
+
+Resource types
+
+- Ambulances.
+- Fire and rescue units.
+- Police response teams.
+- Medical supplies.
+- Rescue equipment.
+
+Resource fields
+
+- Resource ID.
+- Resource type.
+- Department.
+- Location.
+- Availability.
+- Assigned incident.
+- Last updated time.
+
+Resource statuses
+
+- Available.
+- Assigned.
+- In Use.
+- Unavailable.
+
+Administrators can:
+
+- Add resources.
+- Edit resource information.
+- Update availability.
+- Assign resources to incidents.
+- Release resources.
+- View resource history.
+
+For the prototype, use manually maintained sample resources.
+
+Do not represent simulated availability as actual emergency fleet availability.
+
+---
+
+18. INCIDENT TIMELINE AND AUDIT TRAIL
+
+Create a chronological activity timeline for each incident.
+
+Record:
+
+- Incident submitted.
+- Incident reviewed.
+- Incident verified.
+- Priority assigned.
+- Priority changed.
+- Department notification created.
+- Notification delivered.
+- Department acknowledgement received.
+- Response started.
+- Status changed.
+- Incident resolved.
+- Incident closed.
+
+Each activity must include:
+
+- Timestamp.
+- User or system actor.
+- Action.
+- Previous value where applicable.
+- Updated value.
+- Notes.
+
+Audit records should be protected from ordinary editing and deletion.
+
+---
+
+19. MULTILINGUAL AND ACCESSIBILITY FEATURES
+
+Provide:
+
+- English interface.
+- Tamil interface.
+- Simple language for emergency reporting.
+- Large-text mode.
+- Keyboard navigation.
+- Screen-reader-friendly labels.
+- High contrast mode.
+- Clear category icons.
+- Mobile-friendly reporting.
+
+All major interface labels should be translatable.
+
+---
+
+20. OFFLINE REPORT DRAFTING
+
+Implement offline draft support.
+
+When internet connectivity is lost:
+
+- Allow users to prepare a report.
+- Save it locally on the device.
+- Display an OFFLINE DRAFT status.
+- Allow editing of saved drafts.
+- Detect when connectivity returns.
+- Ask the user to submit the draft.
+- Prevent accidental duplicate submission.
+
+Important: A saved offline draft is NOT an emergency report received by RESQORA. Clearly explain that the user must submit it when connectivity is available.
+
+---
+
+21. NOTIFICATION CENTRE
+
+Create a central notification system.
+
+Notification types:
+
+- New incident report.
+- Critical priority suggestion.
+- Priority escalation.
+- New cluster detected.
+- Potential duplicate detected.
+- Department acknowledgement.
+- Failed notification.
+- Resource assignment.
+- Incident status change.
+
+Include:
+
+- Read/unread status.
+- Timestamp.
+- Notification category.
+- Related incident link.
+- Mark as read.
+- Mark all as read.
+- Notification filtering.
+
+---
+
+22. ANALYTICS AND REPORT GENERATION
+
+Create a disaster analytics page.
+
+Include:
+
+- Category-wise incident analysis.
+- State-wise comparison.
+- District-wise comparison.
+- Priority trends.
+- Daily, weekly and monthly trends.
+- People affected statistics.
+- Reported injuries.
+- Average acknowledgement time.
+- Incident resolution trends.
+- Department performance indicators.
+
+Provide CSV export.
+
+Provide printable incident summaries.
+
+Clearly distinguish report-submission timestamps from actual response timestamps.
+
+---
+
+23. SEARCH AND FILTER SYSTEM
+
+Provide global search for:
+
+- Incident ID.
+- Incident title.
+- Location.
+- State.
+- District.
+- Category.
+
+Provide combined filters:
+
+- Category.
+- Severity.
+- LIFE-FIRST priority.
+- Incident status.
+- Verification status.
+- Department.
+- Date range.
+
+All filters must work together.
+
+Include a Reset Filters option.
+
+---
+
+24. DATABASE DESIGN
+
+Use a relational database.
+
+Recommended tables:
+
+1. users
+2. incidents
+3. incident_attachments
+4. incident_assessments
+5. incident_priority_history
+6. incident_status_history
+7. departments
+8. department_notifications
+9. department_acknowledgements
+10. resources
+11. resource_assignments
+12. incident_clusters
+13. cluster_incidents
+14. duplicate_suggestions
+15. notifications
+16. audit_logs
+
+Important incident fields
+
+Each incident should store:
+
+- id
+- incident_reference
+- title
+- description
+- category
+- latitude
+- longitude
+- state
+- district
+- locality
+- people_affected
+- people_injured
+- injury_severity
+- people_trapped
+- immediate_danger
+- medical_condition
+- vulnerable_people
+- situation_escalating
+- severity
+- suggested_priority
+- final_priority
+- verification_status
+- incident_status
+- submitted_at
+- updated_at
+- submitted_by
+
+Use proper database relationships and foreign keys.
+
+Add indexes for frequently searched fields.
+
+---
+
+25. TECHNICAL ARCHITECTURE
+
+Recommended technology:
+
+Frontend:
+
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Lucide icons.
+
+Backend:
+
+- Python Flask with REST API.
+
+Database:
+
+- SQLite for local prototype.
+- PostgreSQL for production deployment.
+
+Maps:
+
+- Leaflet.
+- OpenStreetMap.
+- Actual India state and district GeoJSON boundaries.
+
+Charts:
+
+- Chart.js.
+
+Additional:
+
+- Browser geolocation.
+- Local storage or IndexedDB for offline drafts.
+- Secure file uploads.
+- Role-based authentication.
+
+Backend API endpoints
+
+Create functional API endpoints such as:
+
+POST /api/incidents
+GET /api/incidents
+GET /api/incidents/:id
+PUT /api/incidents/:id
+DELETE /api/incidents/:id
+
+POST /api/incidents/:id/verify
+POST /api/incidents/:id/assess
+POST /api/incidents/:id/update-priority
+
+GET /api/map/india
+GET /api/map/states/:state
+GET /api/map/districts/:district
+
+GET /api/analytics/overview
+GET /api/analytics/human-impact
+
+GET /api/departments
+POST /api/departments/notifications
+POST /api/departments/notifications/:id/acknowledge
+POST /api/departments/notifications/:id/update-status
+
+GET /api/clusters
+POST /api/clusters/:id/verify
+
+GET /api/resources
+POST /api/resources
+PUT /api/resources/:id
+
+GET /api/notifications
+GET /api/audit-logs
+
+Add authentication, authorization, input validation and appropriate error handling to every protected endpoint.
+
+---
+
+26. SECURITY AND PRIVACY
+
+Implement:
+
+- Secure authentication.
+- Password hashing.
+- Role-based access control.
+- Input sanitisation.
+- File type and file size validation.
+- Secure file storage.
+- API access control.
+- Rate limiting.
+- Audit logging.
+- Protection against unauthorised data access.
+- Privacy-conscious handling of contact details.
+- No public exposure of personal information.
+
+Do not publish sensitive citizen contact details on the public map.
+
+Do not expose exact locations of vulnerable individuals publicly.
+
+---
+
+27. FUNCTIONAL REQUIREMENTS
+
+Every button and control must work.
+
+Examples:
+
+- Report Emergency opens the reporting form.
+- Submit Report validates and stores data.
+- View Map opens the interactive India map.
+- Select State displays state statistics.
+- Select District displays district statistics.
+- Select Incident opens incident details.
+- Update Priority recalculates or updates the priority with an audit entry.
+- Verify Report updates verification status.
+- Assign Resource creates an assignment.
+- Notify Department creates a notification record.
+- Acknowledge records an acknowledgement.
+- Update Status changes the operational status.
+- Crisis Pulse runs cluster detection.
+- Duplicate Detection identifies possible duplicates.
+- Export CSV generates a downloadable file.
+- Search returns matching records.
+- Filters update results immediately.
+- Logout ends the authenticated session.
+
+Never leave non-functional decorative buttons.
+
+Display meaningful loading, success, empty and error states.
+
+---
+
+28. DEMONSTRATION MODE
+
+Create a dedicated DEMO MODE for hackathon presentations.
+
+Populate it with clearly labelled fictional sample incidents from different Indian states.
+
+Include sample incidents involving:
+
+- Fire.
+- Road accidents.
+- Medical emergencies.
+- Flooding.
+- Building collapse.
+- Other emergencies.
+
+Demonstrate:
+
+1. Citizen submits an emergency.
+2. Incident is saved.
+3. LIFE-FIRST evaluates the information.
+4. Incident appears on the India map.
+5. Smart Triage suggests priority.
+6. Crisis Pulse detects related reports.
+7. Potential duplicates are flagged.
+8. Relevant departments are identified.
+9. Simulated notifications are sent.
+10. Department users acknowledge notifications.
+11. Administrator updates response progress.
+12. Incident timeline records changes.
+13. Dashboard analytics update.
+
+Provide a Reset Demo Data option with confirmation.
+
+Ensure demo records are clearly separated from genuine reports.
+
+---
+
+29. REQUIRED ACCEPTANCE TESTS
+
+Before considering the website complete, test these scenarios:
+
+TEST 1:
+Submit a fire report. Verify that the report appears in the incident table and database.
+
+TEST 2:
+Submit a road accident with reported serious injuries. Verify that LIFE-FIRST recommends urgent assessment.
+
+TEST 3:
+Submit a report with unknown injury information. Verify that it is not automatically classified as safe.
+
+TEST 4:
+Select Tamil Nadu on the India map. Verify that state-level information appears.
+
+TEST 5:
+Select a district. Verify that district-level incidents are displayed.
+
+TEST 6:
+Click an incident marker. Verify that the correct incident details open.
+
+TEST 7:
+Update an incident status. Verify that the timeline records the change.
+
+TEST 8:
+Create a department notification. Verify that its delivery status is recorded separately from acknowledgement.
+
+TEST 9:
+Acknowledge the notification through the department portal. Verify that the administrator sees the acknowledgement.
+
+TEST 10:
+Submit two similar reports from nearby locations. Verify that duplicate suggestions are generated without automatically deleting either report.
+
+TEST 11:
+Submit several nearby related reports. Verify that Crisis Pulse suggests a cluster.
+
+TEST 12:
+Change incident information to indicate a new life-threatening condition. Verify that the priority reassessment is triggered.
+
+TEST 13:
+Assign a resource to an incident. Verify that its availability changes.
+
+TEST 14:
+Export incident records. Verify that the CSV contains the correct filtered data.
+
+TEST 15:
+Log in as a citizen and attempt to access administrator functions. Verify that access is denied.
+
+TEST 16:
+Open the website on a mobile device. Verify that the reporting form and dashboard remain usable.
+
+---
+
+30. FINAL DEVELOPMENT INSTRUCTIONS
+
+Build RESQORA as a complete, working full-stack website.
+
+Follow this development order:
+
+PHASE 1:
+Create the branding, homepage, navigation and responsive design.
+
+PHASE 2:
+Implement authentication and database.
+
+PHASE 3:
+Build emergency incident reporting and all six emergency categories.
+
+PHASE 4:
+Implement severity classification and LIFE-FIRST prioritisation.
+
+PHASE 5:
+Build the administrator dashboard and incident management.
+
+PHASE 6:
+Implement the interactive India map with actual state and district boundaries.
+
+PHASE 7:
+Implement RESCUE BRIDGE emergency department coordination.
+
+PHASE 8:
+Implement Crisis Pulse and duplicate detection.
+
+PHASE 9:
+Implement resources, incident timelines, analytics and notifications.
+
+PHASE 10:
+Implement accessibility, multilingual support, offline drafts and testing.
+
+Do not skip mandatory requirements to build visually impressive innovations.
+
+Do not replace actual functionality with static illustrations.
+
+Do not invent live emergency information.
+
+Use fictional data for demonstrations.
+
+Make the website visually impressive, technically functional, secure and easy to demonstrate.
+
+FINAL PRODUCT IDENTITY
+
+RESQORA
+
+"EVERY SECOND MATTERS. EVERY SIGNAL COUNTS."
+
+A unified national emergency intelligence platform that prioritises human life, connects emergency services and transforms individual reports into coordinated emergency response intelligence.
